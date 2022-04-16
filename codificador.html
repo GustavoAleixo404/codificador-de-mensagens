@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador/Codificador - Challenge</title>
+    <link rel="icon" href="Images/Logo Alura.svg" type="image/x-icon">
+    <!-- Icone que aparece na guia da págian, no caso o logo da alura -->
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/responsivo.css">
+
+    <script src="js/codificador.js" defer></script>
+    <!-- Link com arquivo javascript, utlizando "defer" para que o navegador carregue o html e depois os arquivos .js -->
+
+</head>
+
+<body>
+
+    <header>
+
+        <!-- Icone da Alura com link para página de cursos alura -->
+        <a id="logo-alura" href="https://www.alura.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="Images/Logo Alura.svg" alt="Logo da Alura">
+        </a>
+
+        <h1 id="titulo">Codificador / Decodificador</h1>
+
+    </header>
+
+    <main>
+
+        <!-- Criando uma section para o campo onde o usuário irá interagir -->
+        <section id="campo-inserir">
+            <textarea name="mensagem" id="inserir-textarea" placeholder="Digite o texto aqui"></textarea>
+
+            <p id="icone-esclamacao">
+                <img src="Images/Icone de Esclamação.svg" alt="Icone de esclamação">
+                Apenas letras minúsculas sem acentos.
+            </p>
+
+            <!-- Criando uma div para alinhar or botões mais facilmente no campo -->
+            <div class="botoes">
+                <button id="btn-criptografar">Criptografar</button>
+                <button id="btn-descriptografar">Descriptografar</button>
+            </div>
+        </section>
+
+        <!-- Criando uma section para o campo onde a mensagem criptografada/descriptografada aparecerá -->
+        <section id="campo-resposta">
+
+            <img id="img-procurando" src="Images/Procurando.svg" alt="Desenho procurando texto com uma lupa">
+
+            <textarea name="resposta" id="resposta-textarea" placeholder="Nenhuma mensagem encontrada."
+                disabled></textarea>
+                <!-- Textarea desativada, para evitar edição da mensagem criptografada -->
+
+            <button id="btn-copiar" disabled>Copiar texto</button>
+            <!-- Botão só será ativado depois de criptografar/descriptografar a mensagem -->
+
+        </section>
+
+    </main>
+
+    <footer>
+        <section id="meus-creditos">
+
+            <!-- Div criada para colocar uma imagem de fundo, no caso minha foto -->
+            <div id="minha-imagem" alt="Foto do criador da página"></div>
+            <p>Desenvolvido por: Gustavo_Aleixo&reg;</p>
+
+        </section>
+
+        <section id="minhas-redes">
+
+            <p>Minhas redes sociais:</p>
+
+            <!-- Div´s para os icones das minhas redes sociais -->
+            <div id="icones-redes-sociais">
+
+                <!-- Icone do GitHub com link para o meu perfil -->
+                <a id="icone-github" href="https://github.com/GustavoAleixo404" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="icone-rede-social" src="Images/Icone GitHub.svg" alt="Icone do GitHub">
+                </a>
+
+                <!-- Icone do Linkedin com link para o meu perfil -->
+                <a id="icone-linkedin" href="https://www.linkedin.com/in/gustavo-yuri-aleixo-da-silva-387149182"
+                    target="_blank" rel="noopener noreferrer">
+                    <img class="icone-rede-social" src="Images/Icone Linkedin.svg" alt="Icone do LinkedIn">
+                </a>
+
+                <!-- Icone do Instagram com link para o meu perfil -->
+                <a id="icone-instagram" href="https://www.instagram.com/gustavo_yuri_aleixo/" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="icone-rede-social" src="Images/Icone Intagram.svg" alt="Icone do instagram">
+                </a>
+
+            </div>
+        </section>
+    </footer>
+
+</body>
+
+</html>

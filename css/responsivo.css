@@ -1,0 +1,109 @@
+@media screen and (max-device-width: 740px) {
+
+    /* Estilizando o header para o responsivo até 480px */
+    header {
+        margin: 30px auto;
+    }
+
+    #logo-alura {
+        position: static;
+    }
+
+    #titulo {
+        font-size: 28px;
+        text-align: left;
+    }
+
+
+    /* Estilizando os campos de texto/conteudo principal para o responsivo até 480px*/
+    main {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    #campo-inserir,
+    #campo-resposta {
+        font-size: 24px;
+        width: 80%;
+        height: 200px;
+        padding: 20px;
+        display: inline-block;
+    }
+
+    #campo-resposta img {
+        display: none;
+    }
+
+    #inserir-textarea,
+    #resposta-textarea {
+        height: 100px;
+        font-size: 24px;
+    }
+
+    #icone-esclamacao {
+        font-size: 14px;
+    }
+
+    /* Estilizando os botões para responsivo até 480px */
+    button {
+        width: 150px;
+        font-size: 18px;
+    }
+
+}
+
+
+@media only screen and (min-device-width: 741px) and (max-device-width: 940px) {
+
+    /* Estilizando o header para o responsivo até 480px */
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #logo-alura {
+        position: static;
+    }
+
+    #titulo {
+        font-size: 40px;
+        text-align: center;
+    }
+
+
+    /* Estilizando os campos de texto/conteudo principal para o responsivo até 480px*/
+    main {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    #campo-inserir,
+    #campo-resposta {
+        font-size: 32px;
+        width: 80%;
+        height: 250px;
+        padding: 30px;
+        display: inline-block;
+    }
+
+    #campo-resposta img {
+        display: none;
+    }
+
+    #inserir-textarea,
+    #resposta-textarea {
+        height: 150px;
+        font-size: 32px;
+    }
+
+    #icone-esclamacao {
+        font-size: 20px;
+    }
+
+    /* Estilizando os botões para responsivo até 480px */
+    button {
+        width: 200px;
+        font-size: 24px;
+    }
+
+}
