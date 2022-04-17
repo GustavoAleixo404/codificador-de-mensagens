@@ -1,19 +1,19 @@
 // iniciando lógicas para o projeto
 
-// adicionando avento de click para o botão de criptografar mensagem
-document.querySelector('#btn-criptografar').addEventListener('click', () => {
+// adicionando avento de click para o botão de codificar mensagem
+document.querySelector('#btn-codificar').addEventListener('click', () => {
 
     var textoInserido = document.querySelector('#inserir-textarea');
 
     if (textoInserido.value != "") {
-        var textoCriptografado = textoInserido.value.replace(/e/g, "enter");
-        textoCriptografado = textoCriptografado.replace(/i/g, "imes");
-        textoCriptografado = textoCriptografado.replace(/a/g, "ai");
-        textoCriptografado = textoCriptografado.replace(/o/g, "ober");
-        textoCriptografado = textoCriptografado.replace(/u/g, "ufat");
+        var textoCodificado = textoInserido.value.replace(/e/g, "enter");
+        textoCodificado = textoCodificado.replace(/i/g, "imes");
+        textoCodificado = textoCodificado.replace(/a/g, "ai");
+        textoCodificado = textoCodificado.replace(/o/g, "ober");
+        textoCodificado = textoCodificado.replace(/u/g, "ufat");
 
         document.querySelector('.img-procurando').classList.add("invisivel");
-        document.querySelector('#resposta-textarea').value = textoCriptografado;
+        document.querySelector('#resposta-textarea').value = textoCodificado;
         document.querySelector('#btn-copiar').disabled = false;
         textoInserido.value = "";
     } else {
@@ -21,20 +21,20 @@ document.querySelector('#btn-criptografar').addEventListener('click', () => {
     }
 });
 
-// adicionando avento de click para o botão de descriptografar mensagem
-document.querySelector('#btn-descriptografar').addEventListener('click', () => {
+// adicionando avento de click para o botão de descodificar mensagem
+document.querySelector('#btn-descodificar').addEventListener('click', () => {
 
     var textoInserido = document.querySelector('#inserir-textarea');
 
     if (textoInserido.value != "") {
-        var textoCriptografado = textoInserido.value.replace(/enter/g, "e");
-        textoCriptografado = textoCriptografado.replace(/imes/g, "i");
-        textoCriptografado = textoCriptografado.replace(/ai/g, "a");
-        textoCriptografado = textoCriptografado.replace(/ober/g, "o");
-        textoCriptografado = textoCriptografado.replace(/ufat/g, "u");
+        var textoCodificado = textoInserido.value.replace(/enter/g, "e");
+        textoCodificado = textoCodificado.replace(/imes/g, "i");
+        textoCodificado = textoCodificado.replace(/ai/g, "a");
+        textoCodificado = textoCodificado.replace(/ober/g, "o");
+        textoCodificado = textoCodificado.replace(/ufat/g, "u");
 
         document.querySelector('.img-procurando').classList.add("invisivel");
-        document.querySelector('#resposta-textarea').value = textoCriptografado;
+        document.querySelector('#resposta-textarea').value = textoCodificado;
         document.querySelector('#btn-copiar').disabled = false;
         textoInserido.value = "";
     } else {
