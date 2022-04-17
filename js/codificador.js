@@ -12,10 +12,12 @@ document.querySelector('#btn-criptografar').addEventListener('click', () => {
         textoCriptografado = textoCriptografado.replace(/o/g, "ober");
         textoCriptografado = textoCriptografado.replace(/u/g, "ufat");
 
-        document.querySelector('#img-procurando').style.display = "none";
+        document.querySelector('.img-procurando').classList.add("invisivel");
         document.querySelector('#resposta-textarea').value = textoCriptografado;
         document.querySelector('#btn-copiar').disabled = false;
         textoInserido.value = "";
+    } else {
+        alert("Não é possivel executar a função, pois o campo de texto está vazio.")
     }
 });
 
@@ -31,10 +33,12 @@ document.querySelector('#btn-descriptografar').addEventListener('click', () => {
         textoCriptografado = textoCriptografado.replace(/ober/g, "o");
         textoCriptografado = textoCriptografado.replace(/ufat/g, "u");
 
-        document.querySelector('#img-procurando').style.display = "none";
+        document.querySelector('.img-procurando').classList.add("invisivel");
         document.querySelector('#resposta-textarea').value = textoCriptografado;
         document.querySelector('#btn-copiar').disabled = false;
         textoInserido.value = "";
+    } else {
+        alert("Não é possivel executar a função, pois o campo de texto está vazio.")
     }
 });
 
@@ -44,7 +48,7 @@ document.querySelector('#btn-copiar').addEventListener('click', () => {
     document.querySelector("#resposta-textarea").disabled = false;
     document.querySelector("#resposta-textarea").select();
     document.execCommand("cut");
-    document.querySelector('#img-procurando').style.display = "block";
+    document.querySelector('.img-procurando').classList.remove("invisivel");
     document.querySelector('#btn-copiar').disabled = true;
     document.querySelector("#resposta-textarea").disabled = true;
     alert("O texto foi copiado para a sua área de transferência!");

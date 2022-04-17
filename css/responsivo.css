@@ -30,7 +30,7 @@
         display: inline-block;
     }
 
-    #campo-resposta img {
+    .img-procurando {
         display: none;
     }
 
@@ -86,7 +86,7 @@
         display: inline-block;
     }
 
-    #campo-resposta img {
+    .img-procurando {
         display: none;
     }
 

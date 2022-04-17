@@ -77,10 +77,15 @@ main {
     justify-content: space-evenly;
 }
 
-#campo-resposta img {
+.img-procurando {
     width: 335px;
     height: 305px;
     margin: 5px;
+}
+
+/* classe de estilização adicionada com javascript, para ocultar o elemento da página */
+.invisivel {
+    display: none;
 }
 
 #inserir-textarea {
