@@ -12,12 +12,12 @@ document.querySelector('#btn-codificar').addEventListener('click', () => {
         textoCodificado = textoCodificado.replace(/o/g, "ober");
         textoCodificado = textoCodificado.replace(/u/g, "ufat");
 
-        document.querySelector('.img-procurando').classList.add("invisivel");
+        document.querySelector('.img-procurando').classList.add("invisível");
         document.querySelector('#resposta-textarea').value = textoCodificado;
         document.querySelector('#btn-copiar').disabled = false;
         textoInserido.value = "";
     } else {
-        alert("Não é possivel executar a função, pois o campo de texto está vazio.")
+        alert("Não é possível executar a função, pois o campo de texto está vazio.")
     }
 });
 
@@ -33,12 +33,12 @@ document.querySelector('#btn-descodificar').addEventListener('click', () => {
         textoCodificado = textoCodificado.replace(/ober/g, "o");
         textoCodificado = textoCodificado.replace(/ufat/g, "u");
 
-        document.querySelector('.img-procurando').classList.add("invisivel");
+        document.querySelector('.img-procurando').classList.add("invisível");
         document.querySelector('#resposta-textarea').value = textoCodificado;
         document.querySelector('#btn-copiar').disabled = false;
         textoInserido.value = "";
     } else {
-        alert("Não é possivel executar a função, pois o campo de texto está vazio.")
+        alert("Não é possível executar a função, pois o campo de texto está vazio.")
     }
 });
 
@@ -48,7 +48,7 @@ document.querySelector('#btn-copiar').addEventListener('click', () => {
     document.querySelector("#resposta-textarea").disabled = false;
     document.querySelector("#resposta-textarea").select();
     document.execCommand("cut");
-    document.querySelector('.img-procurando').classList.remove("invisivel");
+    document.querySelector('.img-procurando').classList.remove("invisível");
     document.querySelector('#btn-copiar').disabled = true;
     document.querySelector("#resposta-textarea").disabled = true;
     alert("O texto foi copiado para a sua área de transferência!");
